@@ -5,10 +5,10 @@ def run_guessing_game()
   p guess_number
   p "guess the a number between 1 and 6"
   user_input = gets.chomp
-  if user_input.to_i == guess_number
+  if guess_number == user_input.to_i
     p "You guessed the correct number!"
   end 
-  if user_input.to_i != guess_number
+  if guess_number != user_input.to_i
     p "Sorry! The computer guessed #{guess_number}."
   end
   if user_input.to_s == "exit"
